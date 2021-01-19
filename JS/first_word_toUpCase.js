@@ -1,3 +1,4 @@
+//Первые буквы слова в верхнем регистре.
 const wordsToUpCase = function (str) {
     const strArray = str.split(' ');
     const newArray = [];
@@ -9,8 +10,7 @@ const wordsToUpCase = function (str) {
         newArray.push(wordArray.join(''));
     }
     return newArray.join(' ');
-}
-    
+} 
 
 console.log(wordsToUpCase('i am in the easycode'));
 console.log(wordsToUpCase('код пишется не для машины а для разработчика'));
