@@ -8,18 +8,18 @@ const galleryImgRef = document.querySelectorAll('.gallery-img');
 // renderImg(galleryImgRef);
 
 const options = {
-    rootMargin: '20px',
+   rootMargin: '20px',
 }
 
 const io = new IntersectionObserver((entries, obsrever) => {
-    entries.forEach(entry => {
-        if (entry.isIntersecting) {
+   entries.forEach(entry => {
+      if (entry.isIntersecting) {
 
-            console.log(entry.target);
-            entry.target.src = entry.target.dataset.link;
-            obsrever.unobserve(entry.target);
-        }
-    })
+         console.log(entry.target);
+         entry.target.src = entry.target.dataset.link;
+         obsrever.unobserve(entry.target);
+      }
+   })
 }, options)
 
 galleryImgRef.forEach(img => io.observe(img));

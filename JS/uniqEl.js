@@ -51,8 +51,8 @@ const stringArray = ['Qiwi', 'Poly', 'Mango', 'Qiwi', 'Ajax', 'Poly'];
 
                     // ****************
 const unique = arr => arr
-    .filter((item, _index, array) =>
-        array.indexOf(item) === array.lastIndexOf(item));
+   .filter((item, _index, array) =>
+      array.indexOf(item) === array.lastIndexOf(item));
         // Только те, которые не повторяются в массиве.
 
 console.log(unique(array));

@@ -3,19 +3,19 @@ const modalWindow = document.querySelector('.modal__backdrop');
 const closeModalBtnRef = document.querySelector('.modal__btn--close');
 
 const onOpenModal = () => {
-    window.addEventListener('keydown', onPressEsc);
-    modalWindow.classList.add('modal__backdrop--show');
+   window.addEventListener('keydown', onPressEsc);
+   modalWindow.classList.add('modal__backdrop--show');
 };
 
 const onCloseModal = () => {
-    window.removeEventListener('keydown', onPressEsc);
-    modalWindow.classList.remove('modal__backdrop--show');
+   window.removeEventListener('keydown', onPressEsc);
+   modalWindow.classList.remove('modal__backdrop--show');
 }
 
 const onPressEsc = event => {
-    if (event.code === 'Escape') {
-        onCloseModal();
-    }
+   if (event.code === 'Escape') {
+      onCloseModal();
+   }
 }
 
 openModalbtnRef.addEventListener('click', onOpenModal);

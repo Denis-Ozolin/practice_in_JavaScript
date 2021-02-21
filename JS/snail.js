@@ -9,18 +9,18 @@
 не опустившись на 2 фута ночью. */
 
 const dayToExit = function (ft, moveUp = 7, moveDown = 2) {
-    let move = 0;
-    let day = 0;
-    
-    for (let i = 0; i < ft; i += 1) {
-        move += moveUp;
-        day += 1;
-        if (move < ft) {
+   let move = 0;
+   let day = 0;
+   
+   for (let i = 0; i < ft; i += 1) {
+      move += moveUp;
+      day += 1;
+      if (move < ft) {
             move -= moveDown;
             continue;
-        }
-        return day;
-    }
+      }
+      return day;
+   }
 }
 
 console.log(dayToExit(120));
